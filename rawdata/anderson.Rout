@@ -1,0 +1,9 @@
+> dataset <- read.table(file = "dataset.dat",
++                       as.is = TRUE,
++                       header = TRUE)
+Error in file(file, "rt") : non posso aprire questa connessione
+Calls: read.table -> file
+Inoltre: Warning message:
+In file(file, "rt") :
+  cannot open file 'dataset.dat': File o directory non esistente
+Esecuzione interrotta

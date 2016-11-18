@@ -1,14 +1,3 @@
-dataset <- read.table(file = "dataset.dat",
-                      as.is = TRUE,
-                      header = TRUE)
-names(dataset) <- tolower(names(dataset))
-
-dataset <- within(dataset, {
-
-})
-dataset <- dataset[order(dataset$id), ]
-rownames(dataset) <- NULL
-dim(dataset)
-summary(dataset)
-
-save("dataset", file = "../data/dataset.rda", compress = "bzip2")
+addicts <- read.table(file = "addicts.dat", skip = 19)
+names(addicts) <- c('id', 'clinic', 'status', 'survt', 'prison', 'dose')
+save("addicts", file = "../data/addicts.rda", compress = "bzip2")

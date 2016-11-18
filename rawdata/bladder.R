@@ -1,14 +1,4 @@
-dataset <- read.table(file = "dataset.dat",
-                      as.is = TRUE,
-                      header = TRUE)
-names(dataset) <- tolower(names(dataset))
-
-dataset <- within(dataset, {
-
-})
-dataset <- dataset[order(dataset$id), ]
-rownames(dataset) <- NULL
-dim(dataset)
-summary(dataset)
-
-save("dataset", file = "../data/dataset.rda", compress = "bzip2")
+bladder <- read.table(file = "bladder.dat", skip = 2)
+names(bladder) <- c( "id", "event", "interval", "inttime",
+                    "start", "stop", "tx", "num", "size")
+save("bladder", file = "../data/bladder.rda", compress = "bzip2")
