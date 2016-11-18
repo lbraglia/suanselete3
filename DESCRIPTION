@@ -1,0 +1,12 @@
+Package: suanselete3
+Title: Dataset from Kleinbaum and Klein "Survival analysis - A self learning text" (3rd Ed., 2012)
+Version: 0.1
+Authors@R: person('Luca', 'Braglia', email = 'lbraglia@gmail.com', role = c('aut', 'cre'))
+Description: An unofficial companion to the textbook "Survival Analysis - A
+             Self-Learning Text" by D.G. Kleinbaum and M. Klein
+             (3rd Ed., 2012) including all the accompanying
+             datasets.
+Depends: R (>= 3.3.2)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
